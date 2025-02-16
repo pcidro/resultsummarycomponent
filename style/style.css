@@ -1,0 +1,145 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Hanken Grotesk", serif;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(241, 100%, 89%);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.results {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 15px;
+  padding: 2rem 2rem;
+}
+
+.results h3 {
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.big-number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.small-number {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.results h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.results p {
+  color: hsl(221, 100%, 96%);
+}
+
+.summary {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary h3 {
+  font-weight: bold;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.summary-item {
+  margin-bottom: 20px;
+  gap: 5px;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-item:nth-child(2) {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+.summary-item:nth-child(3) {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.summary-item:nth-child(4) {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.summary-item:nth-child(5) {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.continue {
+  display: block;
+  background-color: hsl(224, 30%, 27%);
+  padding: 1rem 2rem;
+  margin-top: 40px;
+  border-radius: 20px;
+  width: 150px;
+}
+
+.negrito-span {
+  color: hsla(0, 0%, 0%, 0.719);
+  font-weight: bold;
+  text-align: center;
+}
+
+.normal-span {
+  color: hsl(0, 0%, 50%);
+}
+
+.title {
+  margin-right: 40px;
+}
